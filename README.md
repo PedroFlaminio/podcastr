@@ -1,34 +1,48 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
+![Banner NLW#5](./assets/NLW_Wallpaper.png)
+## NLW#5 - Trilha ReactJs - Podcastr
 
-First, run the development server:
+Projeto criado com a intenção de conhecer a tecnologia [Next.js](https://nextjs.org/) durante o Next Level Week 5
 
-```bash
-npm run dev
-# or
-yarn dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠 Tecnologias Utilizadas
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [React](https://pt-br.reactjs.org/)
+- [Next.js](https://nextjs.org/)
+- [Saas](https://sass-lang.com/)
+- [date-fns](https://date-fns.org/)
+- [json-server](https://github.com/typicode/json-server)
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+## Conceitos aprendidos
 
-## Learn More
+### Teoria:
+- Fluxo de uma API
+- Conceitos de React
+  - Componente
+  - Estado
+  - Propriedades
+- Modelos de Web
+  - Web Tradicional
+  - SPA -> Single Page Application
+  - SSR -> Server Side Rendering
+  - SSG -> Static Site Generator
 
-To learn more about Next.js, take a look at the following resources:
+- Diferenças entre React puro e React + Next
+  - Vantagens do Next
+  - Quando utilizar
+  - Demonstração dos resultados depois do deploy
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Prática: 
+- Criação do Projeto e primeiras configurações
+- Estilização geral do App
+- Criação dos componentes
+- Configuração da API com json-server
+- Consumindo a API e gerando as páginas com Next
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+
