@@ -51,13 +51,14 @@ export default function Home({ allEpisodes, latestEpisodes }: HomeProps) {
             <section className={styles.allEpisodes}>
                 <h2>Todos episódios</h2>
                 <table cellSpacing={0}>
+                  <thead>
                     <tr>
                         <th></th>
                         <th>Podcast</th>
                         <th>Integrantes</th>
                         <th>Data</th>
                         <th>Duração</th>
-                    </tr>
+                    </tr></thead>
                     <tbody>
                         {allEpisodes.map((episode) => {
                             return (
