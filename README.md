@@ -40,6 +40,10 @@ Projeto criado com a intenção de conhecer a tecnologia [Next.js](https://nextj
 - Criação dos componentes
 - Configuração da API com json-server
 - Consumindo a API e gerando as páginas com Next
+- Criação e estilização das paginas do app
+- Configuração do Next
+- Roteamento com Next
+- Utilização de páginas estaticas e dinâmicas
 
 
 

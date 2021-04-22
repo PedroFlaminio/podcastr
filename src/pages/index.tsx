@@ -1,11 +1,14 @@
+import { useContext } from "react";
 import { GetStaticProps } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./home.module.scss";
 import { format, parseISO } from "date-fns";
 import ptBR from "date-fns/locale/pt-BR";
+
+import {PlayerContext} from "../contexts/PlayerContext";
 import { api } from "../services/api";
 import { convertDurationToTimeString } from "../utils/convertDurationToTimeString";
+import styles from "./home.module.scss";
 
 type Episode = {
     id: string;
@@ -23,6 +26,8 @@ type HomeProps = {
 };
 
 export default function Home({ allEpisodes, latestEpisodes }: HomeProps) {
+
+  const { play } = useContext(PlayerContext);
     return (
         <div className={styles.homepage}>
             <section className={styles.latestEpisodes}>
@@ -40,7 +45,7 @@ export default function Home({ allEpisodes, latestEpisodes }: HomeProps) {
                                     <span>{episode.publishedAt}</span>
                                     <span>{episode.durationAsString}</span>
                                 </div>
-                                <button type="button">
+                                <button type="button" onClick={() => play(episode)}>
                                     <img src="/play-green.svg" alt="Tocar episódio"></img>
                                 </button>
                             </li>
@@ -51,14 +56,15 @@ export default function Home({ allEpisodes, latestEpisodes }: HomeProps) {
             <section className={styles.allEpisodes}>
                 <h2>Todos episódios</h2>
                 <table cellSpacing={0}>
-                  <thead>
-                    <tr>
-                        <th></th>
-                        <th>Podcast</th>
-                        <th>Integrantes</th>
-                        <th>Data</th>
-                        <th>Duração</th>
-                    </tr></thead>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Podcast</th>
+                            <th>Integrantes</th>
+                            <th>Data</th>
+                            <th>Duração</th>
+                        </tr>
+                    </thead>
                     <tbody>
                         {allEpisodes.map((episode) => {
                             return (
@@ -76,7 +82,7 @@ export default function Home({ allEpisodes, latestEpisodes }: HomeProps) {
                                     <td>{episode.durationAsString}</td>
                                     <td>
                                         <button type="button">
-                                            <img src="/play-green.svg" alt="Tocar episódio"></img>
+                                            <img src="/play-green.svg" alt="Tocar episódio" onClick={() => play(episode)}></img>
                                         </button>
                                     </td>
                                 </tr>
