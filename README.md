@@ -44,6 +44,16 @@ Projeto criado com a intenção de conhecer a tecnologia [Next.js](https://nextj
 - Configuração do Next
 - Roteamento com Next
 - Utilização de páginas estaticas e dinâmicas
+- Configuração e utilização do ContextAPI
+- Controle de elementos do Refs
+- Funcionalidades de um player dentro de um app
+  - Play 
+  - Pause
+  - Next 
+  - Previous 
+  - Shuffle 
+  - Repeat 
+  - Controle de tempo utilizando um slider
 
 
 
